@@ -1,0 +1,1 @@
+DELETE FROM users where user_id is not 1348381054;

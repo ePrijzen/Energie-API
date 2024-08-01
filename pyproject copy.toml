@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "python-energie-api"
+version = "0.1.0"
+description = ""
+authors = ["itheo.tech <theo@vandersluijs.nl>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Flask = "^2.1.2"
+Flask-JWT-Extended = "^4.4.2"
+Flask-RESTful = "^0.3.9"
+Flask-SQLAlchemy = "^3.0.2"
+waitress = "^2.1.2"
+PyYAML = "^6.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

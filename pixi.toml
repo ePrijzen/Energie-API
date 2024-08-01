@@ -1,0 +1,21 @@
+[project]
+name = "Python-Energie-Api"
+version = "0.1.0"
+description = "Add a short description here"
+authors = ["Theo van der Sluijs <theo@vandersluijs.nl>"]
+channels = ["conda-forge"]
+platforms = ["osx-arm64", "linux-aarch64"]
+
+[tasks]
+ePrijzenApi = "python src/app.py"
+
+[activation.env]
+PY_ENV = "prod"
+
+[dependencies]
+flask = ">=3.0.3,<3.1"
+flask-jwt-extended = ">=4.6.0,<4.7"
+flask-restful = ">=0.3.10,<0.4"
+flask-sqlalchemy = ">=3.1.1,<3.2"
+waitress = ">=3.0.0,<3.1"
+pyyaml = ">=6.0.1,<6.1"
